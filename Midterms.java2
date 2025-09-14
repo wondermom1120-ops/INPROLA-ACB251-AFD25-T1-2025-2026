@@ -1,0 +1,26 @@
+public class Midterms2 {
+    public static void main(String[] args) {
+        // Loop numbers 1 to 100
+        for (int num = 1; num <= 100; num++) {
+
+            // Check if number is even
+            switch (num % 2) {
+                case 0: // Even
+                    // Check if divisible by 3
+                    switch (num % 3) {
+                        case 0:
+                            System.out.println("Yes, this is divisible by 3: " + num);
+                            break;
+                        default:
+                            System.out.println(num);
+                            break;
+                    }
+                    break;
+
+                default:
+                    // Odd → do nothing
+                    break;
+            }
+        }
+    }
+}
